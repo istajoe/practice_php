@@ -1,0 +1,63 @@
+/* General styling */
+body {
+    margin-top: 150px;
+    font-family: Arial, sans-serif;
+    background-color: #f3f8fb;
+   /* margin: 20px; */
+}
+
+/* Container for all user profiles */
+.profile-container {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Centers content */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual user profile card */
+.user-profile {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Each card takes 30% of the container */
+    min-width: 250px; /* Ensures responsiveness */
+    text-align: center;
+}
+
+/* Profile picture */
+.user-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+}
+
+/* Name, Email, Comment */
+.user-profile p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Strong (Labels) */
+.user-profile strong {
+    color: #007bff;
+}
+
+/* Responsive: Adjust layout for small screens */
+@media (max-width: 768px) {
+    .user-profile {
+        width: 45%; /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .user-profile {
+        width: 100%; /* Single column on very small screens */
+    }
+}

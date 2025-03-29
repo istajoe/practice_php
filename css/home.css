@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the carousel container */
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling the slides wrapper */
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Styling each slide */
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Styling the navigation buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.program {
+    margin: 20px 0;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 10px 0;
+}
+
+/* button slide */
+
+.slide-button {
+    position: relative;
+    left: -200px;
+    opacity: 0;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: slideIn 1s forwards;
+    transition: all 10s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* service card flip */
+.body1{
+    margin:0;
+    padding:0;
+    background:#f2f2f2;
+    font-family: 'Acme';
+  }
+  
+  .container{
+    max-width:1000px;
+    margin:100px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+  }
+  
+  .card{
+    position:relative;
+    margin:20px 0;
+    width:300px;
+    height:400px;
+    background: #fff;
+    transform-style:preserve-3d;
+    transform:perspective(2000px);
+    transition:1s;
+    box-shadow:inset 100px 0 50px rgba(0,0,0,0.5);
+  }
+  
+  .card:hover{
+    z-index:1111;
+    transform:perspective(2000px) rotate(-10deg);
+    box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
+  }
+  
+  .card .img-container{
+    position:relative;
+    width:100%;
+    height:100%;
+    border:1px solid #000;
+    box-sizing:border-box;
+    transform-origin:left;
+    z-index:1;
+    transition:1s;
+  }
+  
+  .card .img-container img{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+  }
+  
+  .card:hover .img-container{
+    transform:rotateY(-135deg);
+  }
+  
+  .card .card-details{
+    position:absolute;
+    left:0;
+    top:0;
+    box-sizing:border-box;
+    padding:20px;
+    color:#000;
+  }
+  
+   .card .card-details h2{
+    margin:0;
+    padding:0.5em 0;
+    text-transform:uppercase;
+    font-size:2em;
+    color:#ed363a;
+  }
+  
+  .card .card-details p{
+    margin:0;
+    padding:0;
+    line-height:25px;
+    font-size:1.1em;
+  }
+
+  /* freedom hand slide in */
+.body1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 200vh; /* Just to enable scrolling */
+    background-color: #f4f4f4;
+    padding-top: 50px;
+}
+
+.spacer {
+    height: 80vh; /* Adds space before image appears */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide-image {
+    width: 300px;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 2s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
