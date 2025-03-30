@@ -121,7 +121,7 @@ include "header.php";
                             <p><b> > August 2023</b></p>
                         </div>
                         <div class="col">
-                           <img src="/image/"
+                           <img src="/image/">
                         </div>
                        
                     </div>
