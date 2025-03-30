@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.carousel-inner{
+     height: 500px;
+}
+
 /* Styling the carousel container */
 .carousel-container {
     width: 100%;

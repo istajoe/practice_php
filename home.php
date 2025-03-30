@@ -49,29 +49,26 @@ if (!isset($_SESSION['user_id'])) {
     </div>
 
     <!-- Carousel -->
-    <div class="container-fluid" style="background-image: url('/image/nigeria unity.jpg');">
-        <div class="carousel-container">
-            <div class="carousel-slides">
-                <div class="carousel-slide">
-                    <img src="/image/feeding.jpg" alt="Slide 1" style="width:100%">
-                    <h2>Lets feed the vulnerable</h2>
-                </div>
-                <div class="carousel-slide">
-                    <img src="/image/health-care.png" alt="Slide 2" style="width:100%">
-                    <h2>Lets Help The Poor Unhealthy Nigerians</h2>
-                </div>
-                <div class="carousel-slide">
-                    <img src="/image/school_children.jpg" alt="Slide 3" style="width:100%">
-                    <h2>Lets Educate the Illiterate Nigeria children</h2>
-                </div>
-                <div class="carousel-slide">
-                    <img src="/image/job-creation.jpg" alt="Slide 4" style="width:100%">
-                    <h2>Lets Give Jobs To Jobless Nigerians</h2>
-                </div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/image/feeding.jpg" class="d-block w-100" alt="...">
             </div>
-            <button class="carousel-button prev" onclick="changeSlide(-1)">❮</button>
-            <button class="carousel-button next" onclick="changeSlide(1)">❯</button>
+            <div class="carousel-item">
+                <img src="/image/freedom_hand.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/health-care.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!-- Our services -->
@@ -221,40 +218,42 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </div>
     </div>
+    <br>
+    <hr>
 
     <!-- HELP TODAT SECTION -->
     <div class="container-lg mt-5 mb-5">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-body">
+        <div class="row d-flex gap-5 justify-content-center">
+            <div class="col-sm-2 border d-flex justify-content-center text-center">
+                <div class="card1">
+                    <div class="card-body1">
                         <h5 class="card-title">Help Today</h5>
                         <p class="card-text">Your $1 can change life. Nigerians needs your help</p>
                         <a href="#" class="btn btn-primary">DONATE NOW</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-body">
+            <div class="col-sm-2 border d-flex justify-content-cenetr text-center">
+                <div class="card1">
+                    <div class="card-body1">
                         <h5 class="card-title">Help Monthly</h5>
                         <p class="card-text">Support our cause Monthly. Nigeria needs your help</p>
                         <a href="#" class="btn btn-primary">DONATE NOW</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-body">
+            <div class="col-sm-2 border d-flex justify-content-center text-center">
+                <div class="card1">
+                    <div class="card-body1">
                         <h5 class="card-title">Fundraise</h5>
                         <p class="card-text"> Start a fundraiser and inspire others to Help.</p>
                         <a href="#" class="btn btn-primary">LEARN MORE</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-body">
+            <div class="col-sm-2 border d-flex justify-content-center text-center">
+                <div class="card1">
+                    <div class="card-body1">
                         <h5 class="card-title">Volunteer</h5>
                         <p class="card-text">Give your time and help others.</p>
                         <a href="#" class="btn btn-primary">GET STARTED</a>
